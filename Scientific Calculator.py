@@ -104,7 +104,8 @@ def primitive_replacement(s):
     s = re.sub(pattern, lambda x: words_to_numbers.get(x.group(), ''), s)
     return s
 
-
+x_aling = 7
+y_aling = 20
 Label(ws, text="Speech Calculator", font=('Terminal', 20, 'bold'), fg='#000', bg='#fff', width=20, height=1,
       justify=CENTER).place(x=0, y=15)
 
@@ -163,8 +164,7 @@ def root3(x):
     return x ** (1 / 3)
 
 
-x_aling = 7
-y_aling = 20
+
 
 
 def SpeakText(command):
